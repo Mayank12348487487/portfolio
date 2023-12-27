@@ -6,13 +6,21 @@
 	<title>PortFolio</title>
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>
 	
 	<nav id="navbar-example2" class="navbar navbar-sm navbar-md  navbar-lg navbar-xl navbar-xxl px-3 mb-3">
+		
 		<a class="anchors" href="#">PortFolio</a>
-		<ul class="nav  nav-sm nav-md nav-lg nav-xl nav-xxl list">
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" >
+			<i class="fa-solid fa-bars fa-beat fa-2xl" style="color: #ffffff;"></i>
+		  </button>
+		  <div class="offcanvas offcanvas-start" tabindex="-1	" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="height: 90vh;width: 15rem;background-color: black;">
+			
+		<ul class="nav  nav-sm nav-md nav-lg nav-xl nav-xxl list me-auto mb-2 mb-lg-0">
+			<div class="offcanvas-body" style="background-color: black;">
 		  <li class="nav-item">
 			<a class="nav-link" href="#scrollspyHeading1">Home</a>
 		  </li>
@@ -25,7 +33,11 @@
 		  <li class="nav-item">
 			<a class="nav-link" href="#scrollspyHeading4">Contact Me</a>
 		  </li>
+		  <li class="bars"><i class="fa-solid fa-bars fa-beat fa-2xl bar"></i></li>
+		 
 		</ul>
+		</div>
+	</div>
 	  </nav>
 	  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2 parent" tabindex="0">
 		<div id="scrollspyHeading1" class=" para ">
@@ -38,11 +50,13 @@
 		</div>
 	
 		<div id="scrollspyHeading2"  class="container-sm container-md container-lg container-xl container-xxl aboutme">
-			<div class="card carding " style="text-align: center;">
+			<div class="card carding " style="text-align: center;background-color: #0F3460;box-shadow:  0 0.5em 2em -0.4em #ff923cba;
+			
+			transform: translateY(-0.15em);">
 				<div class="card-body">
-				  <h1 class="card-title">ABOUT ME</h5>
+				  <h1 class="card-title" style="color: #FFD369;">ABOUT ME</h5>
 				  <br>
-				  <p class="card-text">
+				  <p class="card-text" style="color: white;">
 					"Hey, I'm Mayank Joshi, and I'm all about the art and science of web development. For years, I've immersed myself in the ever-evolving world of coding and design, honing my skills to craft digital landscapes that captivate and engage. <br>
 <br>
 My journey began with a curiosity about how websites work. That spark led me through a maze of HTML, CSS, and JavaScript, and soon I found myself immersed in the fascinating realm of front-end development. The power to transform lines of code into visually stunning and user-friendly interfaces exhilarates me every day.
@@ -471,5 +485,7 @@ Collaboration fuels my process. Understanding your vision and weaving it into th
         
       </script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="index.js"> </script>
+	
 </body>
 </html>
